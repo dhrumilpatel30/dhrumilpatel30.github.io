@@ -1,0 +1,252 @@
+/*CSS of My project*/
+
+
+/*Font used in My Website Availabe in fonts folder*/
+@font-face {
+   font-family: 'SF-Display';
+   src: url(fonts/SF-Pro-Display-Bold.woff);
+   font-weight: bold;
+}
+@font-face {
+   font-family: 'SF-Display';
+   src: url(fonts/SF-Pro-Display-Medium.woff);
+   font-weight: 500;
+}
+@font-face {
+   font-family: 'SF-Display';
+   src: url(fonts/SF-Pro-Display-Regular.woff);
+   font-weight: normal;
+}
+
+
+
+/*Addition of Backround Image of the webpage*/
+body {
+   background-image: url(background1.jpg);
+   background-repeat: no-repeat;
+   background-attachment: fixed;
+   background-size: cover;
+   font-family: "SF-Display";
+}
+*{
+   box-sizing: border-box;
+}
+
+
+/*All the div used in the website has CSS here*/
+div1 {
+   font-size: 60px;
+   font-weight: 500;
+   margin: 50px;
+   padding-top: 50px;
+}
+div2 {
+   margin-left: 23%;
+   margin-top: 100px;
+   text-align: right;
+   font-size: 50px;
+   font-weight: 500;
+   color: #f11;
+}
+div3{
+   font-size: 80px;
+   display: block;
+   font-family: "SF-Display";
+   display: inline;
+}
+div4{
+   padding-left: 11%;
+   font-weight: 500;
+}
+div5{
+   margin-left: 11%;
+   font-size: 350%;
+   font-weight: 500;
+   display: block;
+   margin-top: 40px;
+}
+div6{
+   font-size: 22px;
+   position: fixed;
+   bottom: 0;
+}
+div7{
+   padding-left: 6%;
+   margin-top: 200px;
+   font-weight: 500;
+   font-size: 250%;
+   color: maroon;
+}
+div8{
+   margin-left: 13%;
+   display: block;
+   font-size:200%;
+   line-height: 50px;
+}  
+div9{
+   font-size: 36px;
+   margin: 70px;
+   font-weight: normal;
+   display: block;
+}
+div10{
+   padding: 50px;
+   display: block;
+   font-weight: 500;
+   font-size: 300%;
+   color: maroon;
+}
+div11{
+   font-size: 300%;
+   color: maroon;
+   margin-left: 7%;
+}
+
+/*CSS of heading*/
+header {
+   font-family: 'SF-Display';
+   font-weight: normal;
+   display: inline;
+}
+
+
+
+/*CSS of the navigation bar*/
+nav {
+   width: 92%;
+   /*background-image: url(background2.jpg);
+   background-repeat: no-repeat;
+   background-size: cover;
+   background-position-y: -20px;*/
+   margin-left: 3%;
+   border: 4px solid maroon;
+   border-radius: 10px;
+   text-align: right;
+   border-left: 20px solid maroon;
+   padding-right: 5px;
+   font-size: 18px;
+   border-collapse: collapse;
+}
+
+a.option {
+   border-collapse: collapse;
+   font-family: "SF-Display";
+   text-decoration: none;
+   font-weight: bold;
+   padding-left: 20px;
+   font-size: 180%;
+   line-height: 50px;
+   padding-right: 25px;
+   font-weight: normal;
+   color: maroon;
+   border-left: 2px solid maroon;
+   border-right: 2px solid maroon;
+}
+a.option-selected {
+   border-collapse: collapse;
+   font-family: "SF-Display";
+   text-decoration: none;
+   font-weight: bold;
+   padding-left: 20px;
+   font-size: 180%;
+   line-height: 50px;
+   padding-right: 25px;
+   font-weight: normal;
+   color: #f60;
+   border-left: 2px solid maroon;
+   border-right: 2px solid maroon;
+}
+a.option:hover {
+   font-size: 200%;
+   padding-right: 15px;
+   padding: 15px;
+   color: #f60;
+}
+a.links{
+   text-decoration: none;
+   margin-left: 1%;
+}
+
+
+/*Some additional CSS*/
+st{
+   color: red;
+   font-weight: 500;
+}
+.link{
+   color: #f11;
+   text-decoration: none;
+}
+.doublecoloum{
+   column-count: 2;
+}
+.emoji {
+   padding-left: 4%;
+   font-size: 500%;
+   display: inline;
+}
+red{
+   color: #f22;
+}
+ong{
+   color:#f60;
+   font-size: 65px;
+   font-weight: bold;
+   margin-left: 11%;
+}
+.but1{
+   height:40px;
+   padding: 20px;
+   line-height: 30px;
+   background-color: maroon;
+   border-radius: 10px;
+   color: wheat;
+   margin: 50px;
+   cursor: pointer;
+   font-size: 80%;
+}
+.but2{
+   height:40px;
+   padding: 20px;
+   line-height: 30px;
+   background-color: maroon;
+   border-radius: 10px;
+   color: wheat;
+   margin: 50px;
+   margin-left: 9%;
+   cursor: pointer;
+   font-size: 36px;
+}
+table.tabl{
+   width: 90%;
+   margin: 30px;
+   margin-left: 50px;   
+}
+
+th {
+
+   font-size: 200%;
+   border: 5px solid darkred;
+   padding: 15px;
+   background-color: rgb(139, 0, 0);
+   color: #fdd;
+}
+
+td {
+   border: 3.5px solid darkred;
+   padding: 10px;
+   font-size: 150%;
+   text-align: center;
+}
+
+td:nth-child(1) {
+   font-size: 180%;
+}
+
+tr:nth-child(even) {
+   background-color: #fcc;
+}
+
+tr:hover {
+   background-color: #f88;
+}
