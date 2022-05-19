@@ -22,6 +22,7 @@
 
 /*Addition of Backround Image of the webpage*/
 body {
+   font-size:90%;
    background-image: url(background1.jpg);
    background-repeat: no-repeat;
    background-attachment: fixed;
