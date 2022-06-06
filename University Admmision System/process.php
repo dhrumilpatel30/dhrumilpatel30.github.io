@@ -1,0 +1,67 @@
+<?php
+session_start();
+$uname = base64_decode(urldecode($_POST["uname"]));
+$parts = explode("@", $uname);
+$uname1=$parts[0];
+$uname_computer_engineering=$uname1.'_CE';
+$uname_information_technology=$uname1.'_IT';
+$uname_mechanical_engineering=$uname1.'_MH';
+$uname_chemical_engineering=$uname1.'_CH';
+$yes="yes";
+if (isset($_SESSION[$uname])) {
+   $param=urlencode(base64_encode($uname));
+   if(isset($_POST['computer_engineering'])){
+      if(isset($_COOKIE["$uname_computer_engineering"])){}
+      else{
+         setcookie("$uname_computer_engineering",$yes,time()+3600*4);
+      }
+   }
+   else{
+      if(isset($_COOKIE["$uname_computer_engineering"])){
+         setcookie("$uname_computer_engineering",$yes,time()-60);
+      }
+      else{}
+   }
+   if(isset($_POST['information_technology'])){
+      if(isset($_COOKIE["$uname_information_technology"])){}
+      else{
+         setcookie("$uname_information_technology",$yes,time()+3600*4);
+      }
+   }
+   else{
+      if(isset($_COOKIE["$uname_information_technology"])){
+         setcookie("$uname_information_technology",$yes,time()-60);
+      }
+      else{}
+   }
+   if(isset($_POST['mechanical_engineering'])){
+      if(isset($_COOKIE["$uname_mechanical_engineering"])){}
+      else{
+         setcookie("$uname_mechanical_engineering",$yes,time()+3600*4);
+      }
+   }
+   else{
+      if(isset($_COOKIE["$uname_mechanical_engineering"])){
+         setcookie("$uname_mechanical_engineering",$yes,time()-60);
+      }
+      else{}
+   }
+   
+   if(isset($_POST['chemical_engineering'])){
+      if(isset($_COOKIE["$uname_chemical_engineering"])){}
+      else{
+         setcookie("$uname_chemical_engineering",$yes,time()+3600*4);
+      }
+   }
+   else{
+      if(isset($_COOKIE["$uname_chemical_engineering"])){
+         setcookie("$uname_chemical_engineering",$yes,time()-60);
+      }
+      else{}
+   }
+   header("Location:home.php?uname=$param");
+}
+else{
+        header("Location:login.php?msg='Your seesion has been timed out'");
+}
+?>
