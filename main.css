@@ -1,47 +1,309 @@
-<!-- About -->
+/*CSS of My project*/
 
-<!DOCTYPE html>
-<html lang="en">
-<link rel="stylesheet" href="main.css">
 
-<head>
-   <meta charset="UTF-8">
-   <title>My Personal Info-</title>
-   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-</head>
+/*Font used in My Website Availabe in fonts folder*/
+@font-face {
+   font-family: 'SF-Display';
+   src: url(fonts/SF-Pro-Display-Bold.woff);
+   font-weight: bold;
+}
+@font-face {
+   font-family: 'SF-Display';
+   src: url(fonts/SF-Pro-Display-Medium.woff);
+   font-weight: 500;
+}
+@font-face {
+   font-family: 'SF-Display';
+   src: url(fonts/SF-Pro-Display-Regular.woff);
+   font-weight: normal;
+}
 
-<body>
-   <!--header code-->
-   <header>
-      <p>
-         <div1>Dhrumil Patel</div1>
-         <div2>Personal Introduction Website</div2>
-      </p>
-   </header>
-   <nav>
-      <a href="index.html" class="option">Home</a>
-      <a href="academics.html" class="option">Academics</a>
-      <a href="projects.html" class="option">My Projects</a>
-      <a href="per_info.html" class="option-selected">About Me</a>
-      <a href="contact.html" class="option">Contact Me</a>
-   </nav>
-   <div9>
-      My Full name is Dhrumilkumar Bharatbhai Patel.<br>
-      Currently I'm pursuing bachelors of technology degree in computer engineering
-      from <a href="https://www.ddu.ac.in/" class="link">Dharmasinh Desai University,Nadiad</a>.I have joined it in September,
-      2021 and going to graduate in 2025. Currently I'm living in my Home at<a href="https://goo.gl/maps/8XmWFEWKHTx58TQH8" class="link"> Dakor</a>.
-      I have completed my HSC and SSC form <a href="https://www.jnvdahod.gov.in/" class="link">Jawahar Navoday Vidyalaya,Dahod-1.</a><br><br>
-      <st> Hobbies and Skills:-</st><br>
-      As my field suggests i am super interested in computers. Even so much work on computer doesn't tiers me. I am
-      always ready for learning new programming languages. As of now i am having knowledge of
-      C,C++,PHP,HTML,CSS,SQL and shell-scripting.
-      I am an active participant of many coding contests.<br>
-      I have also made some projects which are included here, Code of all projects including this website are also
-      available in <a class="link" href="https://github.com/dhrumilpatel30">Github</a>.
-      For further details and queries you're welcome to <a href="contact.html" class="link">contact me.</a>
-      <br><br><st>Thank You</st>
-   </div9>
-   <div6>
-      ©️Dhrumilkumar Patel
-   </div6>
-</body>
+
+@media (max-width: 1450px){
+   div1 {
+      font-size: 60px!important;
+      font-weight: 500; 
+      padding: 0px!important;
+      margin: 0px!important;
+      text-align: center!important;
+   }
+   div2 {
+      padding: 0px!important;
+      text-align: center!important;
+      display: flex;
+      margin: 0px!important;
+   }
+}
+@media (max-width:500px){
+   *{
+      font-size:smaller;
+   }
+   table{
+      font-size: larger;
+   }
+   div7,div8{
+      font-size: 30px!important;
+   }
+}
+@media (max-width:660px){
+   div2{ 
+      text-align: left;
+   }
+   div3{
+      text-align: center!important;
+      display: block!important;
+   }
+   div9{
+      font-size: 24px!important;
+   }
+}
+@media (max-width:1070px) {
+  nav{
+    position: initial;
+    right: 0;
+    top: 0;
+  }
+  nav a {
+    float: none;
+    display: block;
+    text-align: left;
+  }
+  .doublecoloum{
+   column-count: 1!important;
+  } 
+}
+/*Addition of Backround Image of the webpage*/
+body {
+   background-image: url(background1.jpg);
+   background-repeat: no-repeat;
+   background-attachment: fixed;
+   background-size: cover;
+   font-family: "SF-Display";
+}
+*{
+   box-sizing: border-box;
+}
+
+a.but1,a.but2{
+   display: inline-block;
+}
+/*All the div used in the website has CSS here*/
+div1 {
+   font-size: 60px;
+   font-weight: 500;
+   margin: 50px;
+   padding-top: 50px;
+}
+div2 {
+   margin-left: 23%;
+   margin-top: 100px;
+   text-align: right;
+   font-size: 50px;
+   font-weight: 500;
+   color: #f11;
+}
+div3{
+   font-size: 80px;
+   display: block;
+   font-family: "SF-Display";
+   display: inline;
+}
+div4{
+   padding-left: 11%;
+   font-weight: 500;
+}
+div5{
+   margin-left: 11%;
+   font-size: 350%;
+   font-weight: 500;
+   display: block;
+   margin-top: 40px;
+}
+div6{
+   font-size: 22px;
+   position: fixed;
+   bottom: 0;
+}
+div7{
+   padding-left: 6%;
+   margin-top: 200px;
+   font-weight: 500;
+   font-size: 250%;
+   color: maroon;
+}
+div8{
+   margin-left: 13%;
+   display: block;
+   font-size:200%;
+   line-height: 50px;
+}  
+div9{
+   font-size: 36px;
+   margin: 70px;
+   font-weight: normal;
+   display: block;
+  text-align: justify;
+}
+div10{
+   padding: 50px;
+   display: block;
+   font-weight: 500;
+   font-size: 300%;
+   color: maroon;
+}
+div11{
+   font-size: 300%;
+   color: maroon;
+   margin-left: 7%;
+}
+
+/*CSS of heading*/
+header {
+   font-family: 'SF-Display';
+   font-weight: normal;
+   display: inline;
+}
+
+
+
+/*CSS of the navigation bar*/
+nav {
+   overflow: hidden;
+   width: 92%;
+   /*background-image: url(background2.jpg);
+   background-repeat: no-repeat;
+   background-size: cover;
+   background-position-y: -20px;*/
+   margin-left: 3%;
+   border: 4px solid maroon;
+   border-radius: 10px;
+   text-align: right;
+   border-left: 20px solid maroon;
+   padding-right: 5px;
+   font-size: 18px;
+   border-collapse: collapse;
+}
+
+a.option {
+   border-collapse: collapse;
+   font-family: "SF-Display";
+   text-decoration: none;
+   font-weight: bold;
+   padding-left: 20px;
+   font-size: 180%;
+   line-height: 50px;
+   padding-right: 25px;
+   font-weight: normal;
+   color: maroon;
+   border-left: 2px solid maroon;
+   border-right: 2px solid maroon;
+}
+a.option-selected {
+   border-collapse: collapse;
+   font-family: "SF-Display";
+   text-decoration: none;
+   font-weight: bold;
+   padding-left: 20px;
+   font-size: 180%;
+   line-height: 50px;
+   padding-right: 25px;
+   font-weight: normal;
+   color: #f60;
+   border-left: 2px solid maroon;
+   border-right: 2px solid maroon;
+}
+a.option:hover {
+   font-size: 200%;
+   padding-right: 15px;
+   padding: 15px;
+   color: #f60;
+}
+a.links{
+   text-decoration: none;
+   margin-left: 1%;
+}
+
+
+/*Some additional CSS*/
+st{
+   color: red;
+   font-weight: 500;
+}
+.link{
+   color: #f11;
+   text-decoration: none;
+}
+.doublecoloum{
+   column-count: 2;
+}
+.emoji {
+   padding-left: 4%;
+   font-size: 500%;
+   display: inline;
+}
+red{
+   color: #f22;
+}
+ong{
+   color:#f60;
+   font-size: 65px;
+   font-weight: bold;
+   margin-left: 11%;
+}
+.but1{
+   height:70px;
+   padding: 20px;
+   line-height: 30px;
+   background-color: maroon;
+   border-radius: 10px;
+   color: wheat;
+   margin-bottom: 5px;
+   margin-left: 5px;
+   cursor: pointer;
+   font-size: 80%;
+}
+.but2{
+   height:70px;
+   padding: 20px;
+   line-height: 30px;
+   background-color: maroon;
+   border-radius: 10px;
+   color: wheat;
+   margin-bottom: 0px;
+   margin-left: 9%;
+   cursor: pointer;
+   font-size: 36px;
+}
+table.tabl{
+   width: 90%;
+   margin: 30px;
+   margin-left: 50px;   
+}
+
+th {
+
+   font-size: 200%;
+   border: 5px solid darkred;
+   padding: 15px;
+   background-color: rgb(139, 0, 0);
+   color: #fdd;
+}
+
+td {
+   border: 3.5px solid darkred;
+   padding: 10px;
+   font-size: 150%;
+   text-align: center;
+}
+
+td:nth-child(1) {
+   font-size: 180%;
+}
+
+tr:nth-child(even) {
+   background-color: #fcc;
+}
+
+tr:hover {
+   background-color: #f88;
+}
